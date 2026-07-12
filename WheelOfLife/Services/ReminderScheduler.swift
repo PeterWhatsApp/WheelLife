@@ -111,7 +111,7 @@ final class ReminderScheduler: ObservableObject {
         center.removePendingNotificationRequests(withIdentifiers: [Self.notificationID])
 
         let content = UNMutableNotificationContent()
-        content.title = "Check your Wheel of Life"
+        content.title = "Check your Life Planning Wheel"
         content.body = "A quick re-rate keeps your balance honest. Open the app and update your scores."
         content.sound = .default
 

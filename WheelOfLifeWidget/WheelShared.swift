@@ -2,7 +2,7 @@ import Foundation
 import SwiftUI
 
 enum AppGroup {
-    static let suiteName = "group.Crimson.WheelOfLife"
+    static let suiteName = "group.com.crimson.lifeplanningwheel"
     static let snapshotKey = "widget_snapshot_v1"
 
     static var defaults: UserDefaults {

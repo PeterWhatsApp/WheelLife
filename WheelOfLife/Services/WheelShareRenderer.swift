@@ -10,7 +10,7 @@ struct WheelShareCard: View {
 
     var body: some View {
         VStack(spacing: 18) {
-            Text("Wheel of Life")
+            Text("Life Planning Wheel")
                 .font(.system(size: 22, weight: .bold, design: .rounded))
                 .foregroundStyle(AppTheme.ink)
 

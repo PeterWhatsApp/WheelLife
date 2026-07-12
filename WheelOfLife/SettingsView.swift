@@ -31,7 +31,7 @@ struct SettingsView: View {
                                         .font(.system(size: 30))
                                         .foregroundStyle(.white)
                                 }
-                                Text("Wheel of Life")
+                                Text("Life Planning Wheel")
                                     .font(.system(.title3, design: .rounded).weight(.bold))
                                 Text("Version \(appVersion)")
                                     .font(.subheadline)

@@ -1,6 +1,6 @@
 import SwiftUI
 
-let appVersion = "1.1"
+let appVersion = "1.0"
 
 struct ContentView: View {
     @StateObject private var store = WheelStore()
@@ -75,7 +75,7 @@ struct WheelHomeView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {
-                    Text("Wheel of Life")
+                    Text("Life Planning Wheel")
                         .font(.system(.headline, design: .rounded).weight(.semibold))
                         .foregroundStyle(AppTheme.ink)
                 }
@@ -83,7 +83,7 @@ struct WheelHomeView: View {
                     if let shareImage {
                         ShareLink(
                             item: shareImage,
-                            preview: SharePreview("My Wheel of Life", image: Image(uiImage: shareImage.image))
+                            preview: SharePreview("My Life Planning Wheel", image: Image(uiImage: shareImage.image))
                         ) {
                             Image(systemName: "square.and.arrow.up")
                         }

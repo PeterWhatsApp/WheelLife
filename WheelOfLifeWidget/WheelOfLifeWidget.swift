@@ -25,7 +25,7 @@ struct WheelBalanceWidget: Widget {
                     )
                 }
         }
-        .configurationDisplayName("Wheel of Life")
+        .configurationDisplayName("Life Planning Wheel")
         .description("See your balance average and focus area at a glance.")
         .supportedFamilies([.systemSmall, .systemMedium])
     }
