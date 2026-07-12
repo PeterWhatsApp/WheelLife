@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A100000E2FB15B550018D543 /* WheelOfLifeWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A10000032FB15B550018D543 /* WheelOfLifeWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		BE7153372FB15B550018D543 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,12 +25,20 @@
 			remoteGlobalIDString = BE7153282FB15B540018D543;
 			remoteInfo = WheelOfLife;
 		};
+		A10000062FB15B550018D543 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE7153212FB15B540018D543 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A10000012FB15B550018D543;
+			remoteInfo = WheelOfLifeWidget;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		BE7153292FB15B540018D543 /* WheelOfLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WheelOfLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7153362FB15B550018D543 /* WheelOfLifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WheelOfLifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7153402FB15B550018D543 /* WheelOfLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WheelOfLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10000032FB15B550018D543 /* WheelOfLifeWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WheelOfLifeWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -43,6 +55,21 @@
 		BE7153432FB15B550018D543 /* WheelOfLifeUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = WheelOfLifeUITests;
+			sourceTree = "<group>";
+		};
+		A100000F2FB15B550018D543 /* Exceptions for "WheelOfLifeWidget" folder in "WheelOfLifeWidget" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A10000012FB15B550018D543 /* WheelOfLifeWidget */;
+		};
+		A10000022FB15B550018D543 /* WheelOfLifeWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A100000F2FB15B550018D543 /* Exceptions for "WheelOfLifeWidget" folder in "WheelOfLifeWidget" target */,
+			);
+			path = WheelOfLifeWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,6 +96,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A10000072FB15B550018D543 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -76,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				BE71532B2FB15B540018D543 /* WheelOfLife */,
+				A10000022FB15B550018D543 /* WheelOfLifeWidget */,
 				BE7153392FB15B550018D543 /* WheelOfLifeTests */,
 				BE7153432FB15B550018D543 /* WheelOfLifeUITests */,
 				BE71532A2FB15B540018D543 /* Products */,
@@ -86,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				BE7153292FB15B540018D543 /* WheelOfLife.app */,
+				A10000032FB15B550018D543 /* WheelOfLifeWidget.appex */,
 				BE7153362FB15B550018D543 /* WheelOfLifeTests.xctest */,
 				BE7153402FB15B550018D543 /* WheelOfLifeUITests.xctest */,
 			);
@@ -93,6 +129,20 @@
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A10000042FB15B550018D543 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A100000E2FB15B550018D543 /* WheelOfLifeWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		BE7153282FB15B540018D543 /* WheelOfLife */ = {
@@ -102,10 +152,12 @@
 				BE7153252FB15B540018D543 /* Sources */,
 				BE7153262FB15B540018D543 /* Frameworks */,
 				BE7153272FB15B540018D543 /* Resources */,
+				A10000042FB15B550018D543 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A10000052FB15B550018D543 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				BE71532B2FB15B540018D543 /* WheelOfLife */,
@@ -163,6 +215,28 @@
 			productReference = BE7153402FB15B550018D543 /* WheelOfLifeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		A10000012FB15B550018D543 /* WheelOfLifeWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A100000C2FB15B550018D543 /* Build configuration list for PBXNativeTarget "WheelOfLifeWidget" */;
+			buildPhases = (
+				A10000092FB15B550018D543 /* Sources */,
+				A10000072FB15B550018D543 /* Frameworks */,
+				A10000082FB15B550018D543 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A10000022FB15B550018D543 /* WheelOfLifeWidget */,
+			);
+			name = WheelOfLifeWidget;
+			packageProductDependencies = (
+			);
+			productName = WheelOfLifeWidget;
+			productReference = A10000032FB15B550018D543 /* WheelOfLifeWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +258,9 @@
 						CreatedOnToolsVersion = 26.4.1;
 						TestTargetID = BE7153282FB15B540018D543;
 					};
+					A10000012FB15B550018D543 = {
+						CreatedOnToolsVersion = 26.4.1;
+					};
 				};
 			};
 			buildConfigurationList = BE7153242FB15B540018D543 /* Build configuration list for PBXProject "WheelOfLife" */;
@@ -201,6 +278,7 @@
 			projectRoot = "";
 			targets = (
 				BE7153282FB15B540018D543 /* WheelOfLife */,
+				A10000012FB15B550018D543 /* WheelOfLifeWidget */,
 				BE7153352FB15B550018D543 /* WheelOfLifeTests */,
 				BE71533F2FB15B550018D543 /* WheelOfLifeUITests */,
 			);
@@ -223,6 +301,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BE71533E2FB15B550018D543 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A10000082FB15B550018D543 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +338,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A10000092FB15B550018D543 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +357,11 @@
 			isa = PBXTargetDependency;
 			target = BE7153282FB15B540018D543 /* WheelOfLife */;
 			targetProxy = BE7153412FB15B550018D543 /* PBXContainerItemProxy */;
+		};
+		A10000052FB15B550018D543 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A10000012FB15B550018D543 /* WheelOfLifeWidget */;
+			targetProxy = A10000062FB15B550018D543 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -395,6 +492,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WheelOfLife/WheelOfLife.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2UNF9LFD26;
@@ -409,7 +507,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = Crimson.WheelOfLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -427,6 +525,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WheelOfLife/WheelOfLife.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2UNF9LFD26;
@@ -441,7 +540,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = Crimson.WheelOfLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -538,6 +637,64 @@
 			};
 			name = Release;
 		};
+		A100000A2FB15B550018D543 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WheelOfLifeWidget/WheelOfLifeWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2UNF9LFD26;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WheelOfLifeWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Wheel of Life";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = Crimson.WheelOfLife.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A100000B2FB15B550018D543 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WheelOfLifeWidget/WheelOfLifeWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2UNF9LFD26;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WheelOfLifeWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Wheel of Life";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = Crimson.WheelOfLife.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -573,6 +730,15 @@
 			buildConfigurations = (
 				BE7153512FB15B550018D543 /* Debug */,
 				BE7153522FB15B550018D543 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A100000C2FB15B550018D543 /* Build configuration list for PBXNativeTarget "WheelOfLifeWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A100000A2FB15B550018D543 /* Debug */,
+				A100000B2FB15B550018D543 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
